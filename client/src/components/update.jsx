@@ -67,7 +67,7 @@ const UpdateTrip = () => {
                     <input type="text" name='destination' value={destination} onChange={ e => setDestination(e.target.value) } />
                 </div>
 
-                { errors ? <p className='error-message'>{ errors }</p> : null }
+                {/* { errors ? <p className='error-message'>{ errors }</p> : null } */}
                 <br />
 
                 <div className='form-options'>
