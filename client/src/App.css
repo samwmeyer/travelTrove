@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(rgb(14, 24, 13), rgb(15, 36, 15));
+  padding: 10px;
+  padding-left: 20px;
+  border-bottom: 2px solid black;
+}
+
+.navBarLinks {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+  align-items: center;
+}
+
+.navBarButton {
+  color: white;
+  padding-right: 20px;
+  border-right: 2px solid white;
+  text-decoration: none;
+}
+.navBarButton2 {
+  color: white;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: adventureFont;
+  src: url(Adventure.otf);
+}
+
+.funFont {
+  font-family: adventureFont;
+  font-size: xx-large;
+}
+
+.home-header {
+  font-size: 500%;
+  text-align: center;
+  width: 100%;
+  padding-top: 100px;
+  font-family: adventureFont;
+}
+.home-body {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 50%;
+  text-align: center;
+  font-size: larger;
+}
+.home-buttons {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 50%;
+  justify-content: space-between;
+}
+.home-btn {
+  padding: 20px;
+  font-size: large;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 14px black;
+  background-color: rgb(112, 185, 112);
+}
+.home-btn:hover {
+  background-color: rgb(145, 225, 145);
+  cursor: pointer;
+}
+
+.page-setup {
+  margin: 20px 100px;
+  text-align: center;
+  height: 600px
+}
+
+.explore-header {
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+.google-maps {
+  width: 100%;
+  height: 100%;
+  border: 4px solid rgb(17, 35, 24);
+  box-shadow: 1px 1px 16px rgb(11, 24, 20);
+}
+
+.whole-form {
+  width: 32%;
+  margin: 0 auto;
+  margin-top: 120px;
+  background-image: linear-gradient(darkslateblue, cornflowerblue);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px 2px black;
+  position: relative;
+}
+.form-header {
+  text-align: center;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.form-section-1, .form-section-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: lightgrey;
+  color: black;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 6px black;
+}
+
+.form-section-1 > input {
+  width: 60%;
+  border-radius: 6px;
+  border: none;
+  padding: 4px;
+  margin-left: 20px;
+  background-color: white;
+  color: black;
+  box-shadow: inset 2px 2px 4px grey;
+}
+.submit-button {
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 4px black;
+  background-color: rgba(33, 109, 139, 0.541);
+  transition: background-color .25s;
+  cursor: pointer;
+}
+.submit-button:hover {background-color: rgb(76, 162, 205);}
+
+.form-options {
+  margin: 0 auto;
+  margin-left: 34%;
+  margin-right: 34%;
+}
+
+.triplist {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 80%;
+  flex-wrap: wrap;
+}
+.triplistdiv {
+  background-image: linear-gradient(rebeccapurple, purple);
+  box-shadow: 2px 2px 6px black;
+  border-radius: 8px;
+  border: 4px solid rgb(45, 13, 45);
+  padding: 20px;
+  margin-bottom: 60px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  position: relative;
+  transition: 0.3s;
+}
+.triplistdiv:hover {
+  background-color: white;
+  transform: scaleY(1.04);
+  transform-origin: center;
+  box-shadow: 2px 2px 14px black;
+}
+
+.list-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.update-btn {
+  background-color: blue;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px black;
+  transition: background-color 0.25s;
+}
+.update-btn:hover {
+  background-color: rgb(127, 115, 218);
+  box-shadow: 0.5px 0.5px 4px 1px black;
+  cursor: pointer;
+}
+.delete-btn {
+  background-color: rgb(127, 19, 19);
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px black;
+  color: black;
+  transition: background-color 0.25s;
+}
+.delete-btn:hover {
+  background-color: rgb(177, 34, 34);
+  box-shadow: 0.5px 0.5px 4px 1px black;
+  cursor: pointer;
+}
+
+
+.triplistbtn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid rgb(11, 24, 11);
+  background-color: green;
+  box-shadow: 2px 2px 12px black;
+  transition: background-color 0.25s;
+}
+.triplistbtn:hover {
+  background-color: rgb(31, 157, 31);
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+}
